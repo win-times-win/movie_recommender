@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Antisocial Movie Info for the Antisocial Man</title>
+</head>
+
+<body>
+
+<div class="container">
+    <figure class="figure">
+      <img src="/static/looking_at_phone.jpeg" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+      <figcaption class="figure-caption">Photo by Ott Maidre from Pexels</figcaption>
+    </figure>
+    <br>
+    <br>
+    <ul class="list-group">
+      <p class="lead">Movie Name: </p>
+          <li class="list-group-item">{{movie_name }}</li>
+      <p class="lead">Average Rating:</p>
+          <li class="list-group-item">{{movie_rating}}</li>
+      <p class="lead">Tags:</p>
+          <li class="list-group-item">
+          {% for tag in movie_tags%}
+              {{tag}}, 
+          {% endfor %}
+          </li>
+    </ul>
+    <p>
+        <form action="/" method="get">
+            <button type="submit" class="btn btn-primary">Respawn</button>
+        </form>
+    </p>
+</div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
