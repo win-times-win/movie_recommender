@@ -1,5 +1,5 @@
 # Movie Recommender
-Using the MovieLens data, a movie recommender that runs on FLASK to produce recommendations using non-negative matrix factorization and collaborative filtering.
+Using the MovieLens data uploaded to a AWS PSQL server, a movie recommender that runs on FLASK to produce recommendations using non-negative matrix factorization and collaborative filtering.
 
 ![](example.gif)
 
