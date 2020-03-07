@@ -2,7 +2,7 @@
 Using the MovieLens data uploaded to an AWS PSQL server, a movie recommender that runs on FLASK to produce recommendations using non-negative matrix factorization and collaborative filtering.
 
 ![](example.gif)
-# Usage
+## Usage
 
 Linux:
 ```bash
